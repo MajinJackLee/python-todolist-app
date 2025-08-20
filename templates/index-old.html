@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Flask đầu tiên</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0056b3;
+        }
+
+        .time {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chào mừng đến với Trang Web đầu tiên của tôi!</h1>
+        <p>Trang này được tạo ra bằng Python và Flask.</p>
+
+        <!-- Dữ liệu từ Python sẽ được hiển thị ở đây -->
+        <div class="time">
+            <p>Bây giờ là: <strong>{{ current_time }}</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>
